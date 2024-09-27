@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wifimanager</title>
     <style>
-        body{
+        body {
+            background-color: rgb(221, 217, 217);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            text-align: center;
         }
-        header{
+ 
+        header {
             background-color: rgb(197, 34, 34);
             color: rgb(255, 255, 255);
             padding: 10px 0;
             text-align: center;
         }
-        div{
-            background-color: rgb(221, 217, 217);
-            width: 30%;
-            height: 250;
-            align-items: right;
-            text-align: right;
+ 
+        div {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            width: 38%;
+            height: 500;
             display: inline-block;
+            max-width: 1000px;
+            border-radius: 8px;
+            padding: 20px;
         }
-
     </style>
+</head>
+ 
+<body>
     <header>
         <h1>SENAI ANCHIETA</h1>
     </header>
-</head>
-<body>
-    <div>oi</div>
+    <br>
+    <div>
+        Nome da Rede (SSID) <br>
+        <input type="text" name="email" placeholder="Exemplo: NomeDaRede"> <br><br>
+        Senha <br>
+        <input type="text" name="email">
+ 
+ 
+    </div>
+    <br>
+    <br>
+    <div>
+        <input type="radio" name="webmaster" value="sim"/> IP Estático<input type="radio" name="webmaster" value="sim"/>IP Dinâmico<br />
+    </div>
+<br>
+<br>
+    <div>
+        Endereço IP
+        <br><input type="text" name="email" placeholder="Exemplo: 111.222.33.4"> <br>
+        Subrede
+        <br><input type="text" name="email" > <br>
+        Gateway
+        <br><input type="text" name="email"> <br>
+    </div>
+    <br><br>
+    <div>
+        <input type="radio" name="webmaster" value="sim"/>
+        Servidor HTTP
+        <input type="radio" name="webmaster" value="sim"/>
+        Cliente MQTT <br>
+        <input type="radio" name="webmaster" value="sim"/>
+        Broker
+        <br><input type="text" name="email" > <br>
+    </div>
+    <br>
+    <br>
+    <div>
+        Banco de Dados<br>
+        <input type="radio" name="webmaster" value="sim"/>Sim<br /><input type="radio" name="webmaster" value="sim"/>Não
+    </div>
+    <br>
+    <br>
+    <div>
+        E-mail
+        <br><input type="text" name="email" placeholder="Exemplo: ex@gmail.com"> <br>
+        Senha
+        <br><input type="text" name="email" > <br>
+        Chave API
+        <br><input type="text" name="email"> <br>
+        URL do banco de dados
+        <br><input type="text" name="email"> <br>
+    </div>
+    <br>
+<button>Enviar</button>
 </body>
+ 
 </html>
